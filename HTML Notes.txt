@@ -1,0 +1,12 @@
+--HTML notes-- 
+
+<div> // Generic element - block element that has no particular properties.
+
+<section> // Thematic element - block element that is intended for general structure ( Sidebar1, main or sidebar2 for example).
+
+ <article> // Standalone element - block element that is meant to be able to br complete in a vaccuum, i.e. a news article or a blog post. 
+
+ Block elements should come first in the name of "mobile first". Block elements include titles H1 to H6, the paragraph tag <p>, 
+    all HTML5 semantic elements as well as <div>s. Those block elements will stretch in viewport unless specified a width.
+    The <link> always looks the same and should only refer to the .css file's name as it should be in the same directory. Only the href should be changed the rest should be as follows:
+     <link rel="stylesheet" type="text/css" href="CSSFILENAMEHERE" 
