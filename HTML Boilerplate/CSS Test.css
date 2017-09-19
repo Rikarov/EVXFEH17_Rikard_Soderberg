@@ -1,0 +1,20 @@
+p{
+    font-family: "Merriweather";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    }
+
+    body { width: 100%; text-align: center; }
+    #centerContainer { width: 900px; text-align: left; margin: 0px auto; }
+
+    html {
+        margin:    0 auto;
+        max-width: 900px;
+    /*}
+    body
+    {
+    I got this from Stack Overflow, I don't know if I should keep this.    /* whatever you want */
+    }  
