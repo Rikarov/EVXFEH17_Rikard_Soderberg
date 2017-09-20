@@ -1,0 +1,138 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+  font-family: 'Merriweather'
+}
+  body{
+    background: url(https://i.pinimg.com/originals/00/df/cb/00dfcbf6e33b4637dd28d1f983f17e48.jpg) no-repeat;
+      background-size: auto auto;
+  background-size: cover;
+  
+  }
+  
+  /*Visas enbart på mobilen*/
+  label{
+    color:red;
+    line-height: 40px;
+    font-size:2em;
+    cursor:pointer;
+  }
+  
+  /*Dold chekcbox som aldrig visas*/
+  #nav-toggle {
+    display: none;
+  }
+  
+  /*Men som används för att dölja och visa menyn på mobilen*/
+  #nav-toggle:checked + #wrapper nav {
+    display: block;
+  }
+  
+  /*Menyn döljs på mobilen som default*/
+  nav {
+    display: none;	
+    text-transform: uppercase;
+  }
+  
+  nav a{
+    display:block;
+    text-decoration: none;
+    font-family: merriweather;
+    font-weight: bold;
+    font-size:10pt;
+    color:#112233;
+    
+  }
+  
+  nav a:hover{
+    background:#223433;
+    color:#f0f1f5;
+  }
+  
+  nav ul{
+    list-style: none;
+    opacity:0.8;
+    
+  }
+  
+  nav ul li{
+    background:skyblue;
+    line-height: 40px;
+    padding-left:50px;
+  }
+  
+  /*Den första undermenyn färgläggs lite annorlunda på mobilen för att kunna skiljas från övre li*/
+  nav ul li ul li a{
+    color:yellow;
+  }
+  
+  /*Den andra undermenyn färgläggs lite annorlunda på mobilen för att kunna skiljas från övre li*/
+  nav ul ul li ul a{
+    color:white;
+  }
+  
+  @media all and (min-width: 630px){
+  /*Tecknet för mobil menyn döljs på desktop*/
+    label{
+      display:none;
+    } 
+    
+    /*Menyn på desktoppen*/
+    nav {
+    height:40px;
+    width:804px;/*beror på vilken bredd man satt på de enskilda li, i detta fall är de 4 li*200px+margin-right på 1px*/ 
+    display:block;
+    margin:0 auto; /*centrar ul inuiti*/
+  
+  }
+    /*Alla ul li centreras på desktoppen*/
+    nav ul{
+      text-align:center;
+    }  
+  
+   /*Menyn på desktoppen*/
+  nav ul li{
+    float:left;/*gör att den flyter till vänster (bättre att göra detta med flexbox)*/
+    width:200px;
+    height:40px;
+    margin-right:1px;
+    padding:0;
+  }
+  
+  /*Döljer dropdown*/
+  nav ul ul li{
+    position:relative; /* sätter positionen till vara relativt till sin behållare*/
+    display:none;
+  }
+  
+  /*Döljer submenyn i dropdown*/
+  nav ul ul ul{
+    display:none;
+    
+  }
+  
+  /*Visar dropdown vid hover på ul li*/
+  nav ul li:hover ul li{
+    display: block;
+    
+  }
+  
+  /*Visar submenyn i dropdown*/
+  nav ul ul li:hover ul{
+    display:block;
+    position:absolute; /*sätter positionen till att absolute mot sin förälder som är satt till att vara relativt*/
+    width:200px; /*samma som ul li*/
+    left:200px; /*absolute position 200px ifrån sin förälder*/
+    top:0px; /*absolute position högst mot sin förälder*/
+    
+  }
+    /*Färgen för undermenyer på desktoppen återställs*/
+    nav ul li ul li a{
+    color:#112233;
+  }
+    /*Färgen för undermenyer på desktoppen återställs*/
+    nav ul ul li ul a{
+    color:#112233;
+  }
+}
