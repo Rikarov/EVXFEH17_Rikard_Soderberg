@@ -1,2 +1,11 @@
 --CSS Notes--
 
+*{
+        box-sizing: border-box;  //* Represents a universal selection for the entire document, and border-box makes it so that it counts for both the size of the content, but also of the padding and border and thickness.
+
+}
+
+*{
+    margin:0;
+    padding:0; //These makes it so that all web browsers see the site the same as  it overrides their defaults. 
+}

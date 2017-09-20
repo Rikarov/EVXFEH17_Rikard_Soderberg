@@ -8,5 +8,7 @@
 
  Block elements should come first in the name of "mobile first". Block elements include titles H1 to H6, the paragraph tag <p>, 
     all HTML5 semantic elements as well as <div>s. Those block elements will stretch in viewport unless specified a width.
+
+    
     The <link> always looks the same and should only refer to the .css file's name as it should be in the same directory. Only the href should be changed the rest should be as follows:
      <link rel="stylesheet" type="text/css" href="CSSFILENAMEHERE" 
