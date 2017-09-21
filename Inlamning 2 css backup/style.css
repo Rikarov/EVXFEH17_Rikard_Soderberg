@@ -5,15 +5,14 @@
   font-family: 'Merriweather'
 }
 
- body{
-    background-color: #e9967a;
+  body{
+    background: url(https://i.pinimg.com/originals/00/df/cb/00dfcbf6e33b4637dd28d1f983f17e48.jpg) no-repeat;
+      background-size: auto auto;
+  background-size: cover;
   text-align: center;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  text-decoration: none;
+  
   }
-
+  
   /*Visas enbart på mobilen*/
   label{
     color:red;
@@ -38,7 +37,7 @@
     text-transform: uppercase;
   }
   
- nav a{
+  nav a{
     display:block;
     text-decoration: none;
     font-family: merriweather;
@@ -138,49 +137,4 @@
     nav ul ul li ul a{
     color:#112233;
   }
-}
-h2 + h3{
-  margin: 0;
-}
-h3{
-  color:greenyellow;
-}
-article{
-  background-color: slategrey;
-  margin: 1em;
-  text-decoration: none;
-}
-article div footer{
-text-align: left;
-font-style: italic;
-}
-article p{
-  background-color: whitesmoke;
-  padding: 0,5em;
-  margin-bottom: 0,5em;
-  text-decoration: none;
-}
-article h3{
-  padding: 0.5em;
-  text-decoration: none;
-}
-a{
-  text-decoration: none;
-}
-.blog_summary #blogul li{
-  text-decoration: line-through;
- color: red;
- background: none;
- text-transform: none;
- text-align: center;
- /* Why don't I have full control over this section? Things above have priority for some reason... */
- }
-span p{
-  line-height: 100px;
-  text-align: center;
-  
-  
-}
-logo{
-  text-align: left;
 }
