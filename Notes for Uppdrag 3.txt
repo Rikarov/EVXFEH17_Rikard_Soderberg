@@ -1,0 +1,32 @@
+--Notes for Uppdrag3--
+
+ 1. For-loopen bör användas för att den syntaxen är kortare att skriva - vilket som kan spara tid i längden.
+
+ Foreach-loopen bör användas när man ska loopa genom en hel lista/kollektion/array.
+
+ 2. +++Do this one at home!+++
+
+ 3. +++Try this at home, make sure it is correct:       
+ string[] Husvagn = {Kabe, Hobby};
+
+Foreach (string Husvagn in Husvagn)
+{
+    Console.WriteLine(Husvagn);
+}
+
+
+4. Heapen är minne som är avsatt för dynamisk allokering, och när det gäller C# så hamnar alla referenstyper och referensobjekt på heapen. 
+
+5. 
+
+
+
+
+
+
+
+
+9. Stacken är minne som är mycket snabbare än heap på grund av att den allokerar endast en liten bit "högst upp" för användning av lokala variabler och deklarationer med mera. När stacken ska lagra något annat går det snabbt att lasta av och byta ut informationen eftersom att det alltid vet exakt vad som ska bytas ut, utan att behövs räkna ut någonting.
+
+10. ++++Do this at home++++
+

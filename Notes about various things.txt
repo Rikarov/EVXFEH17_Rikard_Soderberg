@@ -1,0 +1,8 @@
+H1 and H2 will not be aligned if not specified by the developer. 
+
+Link all HTML documents to a normalize file first, and then a second link to my style CSS. 
+
+flex-shrink keeps the proportion when there is not enough space. Flex-grow, flex-shrink and flex-basis can be put together under one command, 
+flex, which is recommended.
+
+It is possible to put a flexbox container, inside a flexbox container. 
