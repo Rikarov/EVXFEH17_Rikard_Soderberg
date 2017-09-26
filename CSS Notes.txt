@@ -1,11 +1,14 @@
 --CSS Notes--
 
 *{
-        box-sizing: border-box;  //* Represents a universal selection for the entire document, and border-box makes it so that it counts for both the size of the content, but also of the padding and border and thickness.
+        box-sizing: border-box;  /* Represents a universal selection for the entire document. 
+        Border-box makes it so that it counts for both the size of the content, but also of the padding and border and thickness.*/
 
 }
 
 *{
     margin:0;
-    padding:0; //These makes it so that all web browsers see the site the same as  it overrides their defaults. 
+    padding:0; //These makes it so that all web browsers see the site the same as it overrides their defaults. 
 }
+
+All these are no longer needed so long I link the Normalize.css file properly as the first link in a HTML document. 
