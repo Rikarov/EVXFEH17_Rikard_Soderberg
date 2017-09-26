@@ -4,7 +4,9 @@
 
  Foreach-loopen bör användas när man ska loopa genom en hel lista/kollektion/array.
 
- 2. +++Do this one at home!+++
+ 2. +++Try this one at home!+++
+ for (int num = 0; num <= 6; num+2)
+ Console.WriteLine(num);
 
  3. +++Try this at home, make sure it is correct:       
  string[] Husvagn = {Kabe, Hobby};
@@ -17,16 +19,50 @@ Foreach (string Husvagn in Husvagn)
 
 4. Heapen är minne som är avsatt för dynamisk allokering, och när det gäller C# så hamnar alla referenstyper och referensobjekt på heapen. 
 
-5. 
+5. +++Try this at home;+++
+List<string> names = new List<string>();
+names.Add("Joshua");
+names.Add("Hanna");
+names.Add("Purge");
+names.Add("Dendi");
+
+names.Remove(names[0]);
+names.Remove("Dendi");
 
 
 
+6. +++Do this one at home!+++
+
+7.+++Make sure this works at home!+++
+float[] vektor;
+vektor = new float[50]
+vektor[0]=0,5;
+vektor[1]=1,5;
 
 
-
+8. +++Make sure this works at home!+++
+string[] names = new string[]{"Turai Ossa", "Veresh Ossa"}
 
 
 9. Stacken är minne som är mycket snabbare än heap på grund av att den allokerar endast en liten bit "högst upp" för användning av lokala variabler och deklarationer med mera. När stacken ska lagra något annat går det snabbt att lasta av och byta ut informationen eftersom att det alltid vet exakt vad som ska bytas ut, utan att behövs räkna ut någonting.
 
-10. ++++Do this at home++++
+10. ++++Try this at home++++
+for (int num = 1; num < 12; num++)
+{
+    Console.WriteLine(num)
+}
 
+11. En lista är typsäker om man manuellt har satt typen inom <> tecknerna. Till exmempel <string> eller <int>. 
+
+12. Windows Forms är en projektform som har ett "grafiskt användargränsnitt" (GUI), och används främst för popups med eller utan information och/eller valmöjligheter. Till exempel fönstret som kommer och ber användaren att verifiera att de verkligen vill flytta filen till papperskorgen. 
+
+
+
+
+
+
+/////////////////////////////
+
+
+
+Testa dig själv 3 AND hela kurder are both done! 
