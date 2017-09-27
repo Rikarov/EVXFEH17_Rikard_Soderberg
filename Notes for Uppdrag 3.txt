@@ -4,22 +4,23 @@
 
  Foreach-loopen bör användas när man ska loopa genom en hel lista/kollektion/array.
 
- 2. +++Try this one at home!+++
- for (int num = 0; num <= 6; num+2)
- Console.WriteLine(num);
+ 2.             for (int num = 2; num <=6; num+=2)
+                {
+                Console.WriteLine(num);
+            }
+            Console.ReadLine();
 
- 3. +++Try this at home, make sure it is correct:       
- string[] Husvagn = {Kabe, Hobby};
-
-Foreach (string Husvagn in Husvagn)
-{
-    Console.WriteLine(Husvagn);
-}
+ 3.             string[] husvagnar = { "Kabe", "Hobby" };
+            foreach (string husvagn in husvagnar)
+            {
+                Console.WriteLine(husvagn);
+            }
+            Console.ReadLine();
 
 
 4. Heapen är minne som är avsatt för dynamisk allokering, och när det gäller C# så hamnar alla referenstyper och referensobjekt på heapen. 
 
-5. +++Try this at home;+++
+5.
 List<string> names = new List<string>();
 names.Add("Joshua");
 names.Add("Hanna");
@@ -31,22 +32,25 @@ names.Remove("Dendi");
 
 
 
-6. +++Do this one at home!+++
+6.         static void Sail(int length, int weight);
+        static void StopSail();
+		
+	////////////////	I'm unsatisfied with number 6 :(///////////////
 
-7.+++Make sure this works at home!+++
+7.
 float[] vektor;
 vektor = new float[50]
 vektor[0]=0,5;
 vektor[1]=1,5;
 
 
-8. +++Make sure this works at home!+++
+8. 
 string[] names = new string[]{"Turai Ossa", "Veresh Ossa"}
 
 
 9. Stacken är minne som är mycket snabbare än heap på grund av att den allokerar endast en liten bit "högst upp" för användning av lokala variabler och deklarationer med mera. När stacken ska lagra något annat går det snabbt att lasta av och byta ut informationen eftersom att det alltid vet exakt vad som ska bytas ut, utan att behövs räkna ut någonting.
 
-10. ++++Try this at home++++
+10. 
 for (int num = 1; num < 12; num++)
 {
     Console.WriteLine(num)
